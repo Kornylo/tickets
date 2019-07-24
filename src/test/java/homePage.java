@@ -1,16 +1,3 @@
-import io.qameta.allure.okhttp3.AllureOkHttp3;
-import io.undertow.Undertow;
-import io.undertow.server.RoutingHandler;
-import io.undertow.util.Headers;
-import io.undertow.util.Methods;
-import okhttp3.OkHttpClient;
-import org.junit.jupiter.api.*;
-import retrofit2.Call;
-import retrofit2.Retrofit;
-import retrofit2.converter.gson.GsonConverterFactory;
-
-import java.io.IOException;
-
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.switchTo;
 class homePage {
@@ -23,6 +10,6 @@ class homePage {
         $("input#departure_date_1").click();
         $("#ui-datepicker-div > div.btn-wrap > a").click();
         $("input.search_button").click();
-        switchTo().window("Дешевые авиабилеты онлайн: купить авиабилеты на Tickets.ua / Tickets.ua");
+        switchTo().window(1);
     }
 }
